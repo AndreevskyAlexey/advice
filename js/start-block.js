@@ -4,6 +4,8 @@ $(".start-block__consulting").click(function() {
 	$(".start-block__consulting").addClass("start-block__consulting--selected");
 	$(".start-block__adviser").addClass("start-block__adviser--unselected");
 	$(".start-block").addClass("start-block--disabled");
+
+    $(".consulting-block").removeClass("disabled-block");
 });
 
 $(".start-block__adviser").click(function() {

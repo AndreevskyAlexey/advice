@@ -59,12 +59,14 @@ a {
   color: #171717;
   font-family: 'PT Sans', sans-serif;
 }
-.adviser-block {
+.adviser-block,
+.consulting-block {
   text-align: center;
   background-color: #c6c4ff;
   height: 100vh;
 }
-.adviser-block__title {
+.adviser-block__title,
+.consulting-block__title {
   font-size: 30px;
   color: #171717;
   padding-top: 75px;
@@ -117,12 +119,85 @@ a {
   line-height: 58px;
 }
 .check-iq__submit-button {
+  display: block;
   width: 200px;
   height: 40px;
+  line-height: 40px;
   background-color: #77B288;
   border-radius: 5px;
   margin: 0 auto;
   color: #fff;
+  cursor: pointer;
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 2000;
+  transition: 1s all;
+  visibility: visible;
+}
+.preloader__loader {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: blue;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: 2s spin infinite linear;
+          animation: 2s spin infinite linear;
+}
+.preloader__done {
+  opacity: 0;
+  visibility: hidden;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.advice-form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.advice-form__text-input {
+  width: 100%;
+}
+.advice-form__submit-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #77B288;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
 }
 body {
   font-family: 'PT Sans', sans-serif;
