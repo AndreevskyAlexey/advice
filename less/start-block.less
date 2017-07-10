@@ -1,0 +1,57 @@
+@import "_mixins";
+
+.start-block {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	transition: display 3s ease 3s;
+	z-index: 1000;
+
+	&--disabled {
+		pointer-events: none;
+	}
+
+	&__consulting, 
+	&__adviser {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		cursor: pointer;
+		transition: width 1s ease 0s, opacity 1s ease 0.5s;
+		opacity: 1;
+
+		&:hover {
+			width: 150%;
+		}
+
+		&--selected {
+			width: 100%;
+			opacity: 0;
+		}
+
+		&--unselected {
+			width: 0;
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+
+	&__adviser {
+		background-color: #FFB774;
+	}
+
+	&__consulting {
+		background-color: #E8E25E;
+	}
+
+	&__title {
+		font-size: 30px;
+		white-space: nowrap;
+		color: @text-black-color;
+		font-family: 'PT Sans', sans-serif;
+	}
+}

@@ -1,0 +1,134 @@
+a {
+  color: red;
+}
+.start-block {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  transition: display 3s ease 3s;
+  z-index: 1000;
+}
+.start-block--disabled {
+  pointer-events: none;
+}
+.start-block__consulting,
+.start-block__adviser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: width 1s ease 0s, opacity 1s ease 0.5s;
+  opacity: 1;
+}
+.start-block__consulting:hover,
+.start-block__adviser:hover {
+  width: 150%;
+}
+.start-block__consulting--selected,
+.start-block__adviser--selected {
+  width: 100%;
+  opacity: 0;
+}
+.start-block__consulting--unselected,
+.start-block__adviser--unselected {
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.start-block__adviser {
+  background-color: #FFB774;
+}
+.start-block__consulting {
+  background-color: #E8E25E;
+}
+.start-block__title {
+  font-size: 30px;
+  white-space: nowrap;
+  color: #171717;
+  font-family: 'PT Sans', sans-serif;
+}
+.adviser-block {
+  text-align: center;
+  background-color: #c6c4ff;
+  height: 100vh;
+}
+.adviser-block__title {
+  font-size: 30px;
+  color: #171717;
+  padding-top: 75px;
+}
+.check-iq {
+  margin-top: 100px;
+}
+.check-iq__title {
+  font-size: 20px;
+}
+.check-iq__bar-wrapper {
+  margin: 40px auto;
+  width: 340px;
+}
+.check-iq__bar {
+  width: 320px;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  position: relative;
+  top: 12px;
+  z-index: 1;
+}
+.check-iq__circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #ffda22;
+  z-index: 20;
+}
+.check-iq__counter-container {
+  width: 150px;
+  height: 59px;
+  margin: 0 auto;
+  margin-top: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.33);
+}
+.check-iq__counter {
+  color: #fff;
+  font-size: 30px;
+  line-height: 58px;
+}
+.check-iq__submit-button {
+  width: 200px;
+  height: 40px;
+  background-color: #77B288;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+.disabled-block {
+  display: none;
+  pointer-events: none;
+}
