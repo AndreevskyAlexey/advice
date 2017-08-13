@@ -59,23 +59,44 @@ a {
   color: #171717;
   font-family: 'PT Sans', sans-serif;
 }
-.adviser-block,
-.consulting-block {
+.adviser-block {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   background-color: #c6c4ff;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.adviser-block__title,
-.consulting-block__title {
-  font-size: 30px;
-  color: #171717;
-  padding-top: 75px;
+.adviser-block__text-input {
+  width: 340px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
-.check-iq {
-  margin-top: 100px;
+.adviser-block__submit-button {
+  display: block;
+  width: 340px;
+  height: 60px;
+  background-color: #77B288;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 60px;
+  font-size: 18px;
 }
 .check-iq__title {
-  font-size: 20px;
+  font-size: 30px;
+  color: #171717;
 }
 .check-iq__bar-wrapper {
   margin: 40px auto;
@@ -90,6 +111,7 @@ a {
   z-index: 1;
 }
 .check-iq__circle {
+  left: 143px;
   width: 20px;
   height: 20px;
   border: 2px solid white;
@@ -120,14 +142,15 @@ a {
 }
 .check-iq__submit-button {
   display: block;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
+  width: 340px;
+  height: 60px;
   background-color: #77B288;
   border-radius: 5px;
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
+  line-height: 60px;
+  font-size: 18px;
 }
 .preloader {
   position: fixed;
@@ -198,6 +221,20 @@ a {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
+}
+.consulting-block {
+  text-align: center;
+  background-color: #c6c4ff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body {
   font-family: 'PT Sans', sans-serif;

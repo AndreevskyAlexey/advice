@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-$(".start-block__consulting").click(function() {
-
-});
+$(".start-block__consulting").click(function() {});
 
 	$('.check-iq__circle').draggable({
 		axis: "x",
@@ -14,6 +12,8 @@ $(".start-block__consulting").click(function() {
             console.log("drag");
         }
 	});
+
+
 });
 
 

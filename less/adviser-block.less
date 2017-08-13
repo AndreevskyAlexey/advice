@@ -1,15 +1,32 @@
 @import "_mixins";
 
-.adviser-block,
-.consulting-block {
+.adviser-block {
+	flex-wrap: wrap;
 	text-align: center;
 	background-color: #c6c4ff;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-	&__title {
-		font-size: 30px;
-		color: @text-black-color;
-		padding-top: 75px;
+	&__text-input {
+		width: 340px;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+
+	&__submit-button {
+		display: block;
+		width: 340px;
+		height: 60px;
+		background-color: #77B288;
+		border-radius: 5px;
+		margin: 0 auto;
+		margin-top: 40px;
+		color: #fff;
+		cursor: pointer;
+		line-height: 60px;
+		font-size: 18px;
 	}
 }
- 
